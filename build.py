@@ -9,12 +9,14 @@ exam_data = {
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 
-def solution():
+def solution(dat,ind):
     """
     Enter your code here
     Function should not return anything. Test cases will pass any how.
     This exercise it to provide you information for info function.
     """
+    df = pd.DataFrame(data=dat,index=ind)
+    pd.DataFrame.info(df)
 
 
-solution()
+solution(exam_data,labels)
