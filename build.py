@@ -16,5 +16,7 @@ def solution():
     This exercise it to provide you information for info function.
     """
 
+    
+
 
 solution()
