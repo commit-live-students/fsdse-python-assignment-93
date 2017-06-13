@@ -15,6 +15,9 @@ def solution():
     Function should not return anything. Test cases will pass any how.
     This exercise it to provide you information for info function.
     """
-
+    df = pd.DataFrame(exam_data)
+    df.index = labels
+    print df
+    print df.info()
 
 solution()
