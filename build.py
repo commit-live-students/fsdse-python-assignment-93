@@ -9,12 +9,12 @@ exam_data = {
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 
-def solution():
+def solution(df):
     """
     Enter your code here
     Function should not return anything. Test cases will pass any how.
     This exercise it to provide you information for info function.
     """
+    return df.info()
 
-
-solution()
+solution(df)
