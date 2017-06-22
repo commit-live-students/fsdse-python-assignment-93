@@ -8,13 +8,8 @@ exam_data = {
     'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
+def solution(data, indexs):
+    out = pd.DataFrame(data, index = indexs)
+    return out.info()
 
-def solution():
-    """
-    Enter your code here
-    Function should not return anything. Test cases will pass any how.
-    This exercise it to provide you information for info function.
-    """
-
-
-solution()
+solution(exam_data, labels)
