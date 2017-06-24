@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+import numpy
 
 exam_data = {
     'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'],
@@ -9,12 +9,9 @@ exam_data = {
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 
-def solution():
-    """
-    Enter your code here
-    Function should not return anything. Test cases will pass any how.
-    This exercise it to provide you information for info function.
-    """
+def solution(data,index):
+    data_with_updated_labels = pd.DataFrame(data, index=index_labels)
+    return data_with_updated_labels.info()
 
 
-solution()
+solution(exam_data,labels)
