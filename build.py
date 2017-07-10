@@ -10,11 +10,5 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 
 def solution():
-    """
-    Enter your code here
-    Function should not return anything. Test cases will pass any how.
-    This exercise it to provide you information for info function.
-    """
-
-
-solution()
+    df = DataFrame(exam_data,label = labels)
+    return df.info()
