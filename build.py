@@ -10,6 +10,8 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 
 def solution():
+    data = pd.DataFrame(exam_data, index=labels)
+    print data
     """
     Enter your code here
     Function should not return anything. Test cases will pass any how.
